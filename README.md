@@ -1,4 +1,4 @@
-# Smart Hospital and Blood Donor Finder
+# Nabd: Smart Hospital and Blood Donor Finder
 Integrated Mega Project, Fall 2026 | AI 306, CS 312, CO 208 | Badya University
 
 Team: Youssef Essam (PM), Nour elcassy (Data/Stats), Mohamed osama (AI), Toqa Waleed (DB/Web), Nada Moataz (Quality/Docs)
