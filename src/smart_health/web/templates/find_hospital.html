@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Find a Hospital</h1>
+<form method="post">
+  <label>Latitude <input name="lat" type="number" step="any" required></label>
+  <label>Longitude <input name="lon" type="number" step="any" required></label>
+  <label>Specialty <select name="specialty">
+    <option>emergency</option><option>cardiology</option><option>trauma</option>
+    <option>pediatrics</option><option>neurology</option><option>obstetrics</option></select></label>
+  <label>Hour <input name="hour" type="number" min="0" max="23" required></label>
+  <button type="submit">Recommend</button>
+</form>
+{% if result %}<section>{{ result }}</section>{% endif %}
+{% endblock %}

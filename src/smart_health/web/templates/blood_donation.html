@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Blood Donation</h1>
+<form method="post">
+  <label>Hospital ID <input name="hospital_id" type="number" required></label>
+  <label>Blood type <select name="blood_type">
+    {% for b in ['O+','O-','A+','A-','B+','B-','AB+','AB-'] %}<option>{{ b }}</option>{% endfor %}</select></label>
+  <button type="submit">Find donors</button>
+</form>
+{% if donors %}<section>{{ donors }}</section>{% endif %}
+{% endblock %}
